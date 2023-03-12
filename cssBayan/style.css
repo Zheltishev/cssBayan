@@ -43,7 +43,6 @@ h2 {
 }
 
 .label {
-    position: relative;
     cursor: pointer;
     color: lightskyblue;
 }
