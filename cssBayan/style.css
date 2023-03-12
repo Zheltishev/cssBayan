@@ -78,7 +78,7 @@ h2 {
 }
 
 .accordion-item-img img {
-    width: 40%;
+    width: 50%;
 }
 
 .label:hover h2 {
@@ -91,11 +91,16 @@ h2 {
 }
 
 .label:hover .icon img {
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transition: all 0.7s;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -o-transition: all 0.7s;
 }
 
 input[type='radio'] {
@@ -109,4 +114,59 @@ input[type='radio']:checked ~ .label .accordion-item-img {
 
 input[type='radio']:checked ~ .label h2 {
     color: #000000;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1500px) {
+    h1 {
+        font-size: 3rem;
+        padding: 1rem 0;
+    }
+
+    .main {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+    h1 {
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+    }
+
+    .main {
+        width: 60%;
+    }
+
+    .accordion-item-img img {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    h1 {
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+    }
+
+    h2 {
+        font-size: 1rem;
+        padding: 0.5rem 0;
+    }
+
+    .main {
+        width: 90%;
+    }
+
+    .accordion-item-img img {
+        width: 90%;
+    }
+
+    .icon img {
+        width: 1rem;
+    }
 }
